@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'tasks#index'
   
-  resources :messages
+  resources :tasks
   # get 'tasks/:id', to: 'tasks#show'
   # post 'tasks', to: 'tasks#create'
   # put 'tasks/:id', to: 'tasks#update'
