@@ -14,6 +14,7 @@ class TasksController < ApplicationController
   def create
     @task = Task.new(task_params)
 
+    # binding.pry
     if @task.save
       flash[:success] = 'Task が正常に作成されました'
       redirect_to @task
