@@ -10,7 +10,6 @@
       <ul class="navbar-nav">
         <% if logged_in? %>
           <ul class="dropdown-menu dropdown-menu-right">
-              <li class="dropdown-item"><%= link_to 'My Task', tasks_path(current_user) %></li>
               <li class="dropdown-item"><%= link_to 'Logout', logout_path, method: :delete %></li>
           </ul>
         <% else %>  
